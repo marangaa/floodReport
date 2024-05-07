@@ -3,6 +3,7 @@
     height: 100vh;
     background-color: #f7f7f7;
 }
+
 /* Button styles */
 .btn {
     background-color: #4567b7;
@@ -25,31 +26,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Button effects */
-.btn-report-incident {
-    background-image: linear-gradient(to bottom, #4567b7, #3498db);
-    background-size: 100% 200px;
-    background-position: 0% 100%;
-    transition: background-position 0.3s ease;
-}
-
-.btn-report-incident:hover {
-    background-position: 100% 100%;
-}
-
-.btn-emergency-contacts {
-    background-image: linear-gradient(to bottom, #f1c40f, #e67e73);
-    background-size: 100% 200px;
-    background-position: 0% 100%;
-    transition: background-position 0.3s ease;
-}
-
-.btn-emergency-contacts:hover {
-    background-position: 100% 100%;
-}
-
-/* Repeat the button effects for each button */
-
 /* Main content area styles */
 .main-content {
     flex-grow: 1;
@@ -59,33 +35,7 @@
     align-items: center;
 }
 
-/* Map container styles */
-.map-container {
-    width: 100%;
-    height: 600px; /* adjust the height to your liking */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Make the map container full-screen on smaller screens */
-@media only screen and (max-width: 768px) {
-    .map-container {
-        height: 100vh;
-        width: 100vw;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-    }
-}
-
-.map {
-    flex-grow: 1;
-    padding: 20px;
-    border: 1px solid #ddd;
-    height: 300px; /* adjust the height to your liking */
-}
-
+/* Sidebar styles */
 .sidebar {
     width: 250px;
     background-color: #4567b7;
@@ -124,51 +74,6 @@
     margin-right: 10px;
 }
 
-/* Add styles for the report map container */
-.report-map-container {
-    width: 100%;
-    height: 300px; /* adjust the height to your liking */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-}
-
-/* Make the report map container full-screen on smaller screens */
-@media only screen and (max-width: 768px) {
-    .report-map-container {
-        height: 100vh;
-        width: 100vw;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-    }
-}
-
-/* Add styles for the select location button */
-#select-location-button {
-    background-color: #4567b7;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-}
-
-#select-location-button:hover {
-    background-color: #3498db;
-}
-
-#select-location-button:active {
-    background-color: #2e6da4;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
-
-
-
 /* Responsive design */
 @media only screen and (max-width: 768px) {
     .sidebar {
@@ -186,11 +91,5 @@
     }
     .sidebar-nav a {
         padding: 10px;
-    }
-    .modal {
-        padding-top: 50px;
-    }
-    .modal-content {
-        width: 90%;
     }
 }
